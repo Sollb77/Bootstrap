@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/8b1d79fc26.js" crossorigin="anonymous"></script> 
+<title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <!--Instagram-->
+            <a class="navbar-brand" href="#">
+                <i class="fa-brands fa-instagram"></i>
+                Instagram
+          </a>
+        </div>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          
+<!--Abrir form-->
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-success bg-success text-nowrap h-75 mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Create a new post
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel ">Create a new Post</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Caption</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Add the caption of your post here"></textarea>
+              </div>
+        </div>
+        <div class="float-left ps-4">
+          <button type="button" class="btn btn-secondary w-10 h-10 btn-sm "><i class="fa-solid fa-camera"></i></button>
+          <button type="button" class="btn btn-secondary w-10 h-10 btn-sm "> <i class="fa-solid fa-location-dot"></i></button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success bg-success ">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+            <!--Desplegable-->
+            <li class="nav-item dropdown bg-secondary rounded m-2 h-75">
+                <a class="nav-link dropdown-toggle dropdown-center"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-gear"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                  <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                </ul>
+              </li>
+              
+              
+        </ul>
+      </nav>
+      <div class="container-fluid ">
+      
+        <!--Barra de paginas nav tag-->
+        <ul class="nav nav-tabs border-0 d-flex justify-content-center" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-sharp fa-solid fa-table-cells p-2"></i></button>
+          </li>
+          <li class="nav-item " role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-sharp fa-solid fa-square p-2"style="color:gray"></i></button>
+          </li>
+          
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active " id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            
+          <!--Fotos Pag 1-->
+         <div class="row d-flex ">
+          <div class=" col-sm-12 col-ls-6 col-xl-4">
+            <img src="img/img1.jpg" alt="foto1" class=" w-100 h-100 p-2 img-fluid">
+          </div>
+          <div class=" col-sm-12 col-ls-6 col-xl-4">
+           <img src="img/img2.jpg" alt="foto2"class=" w-100 h-100 p-2 img-fluid ">
+          </div>
+          <div class=" col-sm-12 col-ls-6 col-xl-4">
+           <img src="img/img3.jpg" alt="foto3"class=" w-100 h-100 p-2 img-fluid ">
+          </div>
+        </div>
+       <div class="row d-flex ">
+           <div class="col-sm-12 col-ls-6 col-xl-4">
+             <img src="img/img4.jpg" alt="foto4" class=" w-100 h-100  p-2 img-fluid ">
+           </div>
+           <div class="col-sm-12 col-ls-6 col-xl-4">
+            <img src="img/img5.jpg" alt="foto5"class=" w-100 h-100  p-2 img-fluid ">
+           </div>
+           <div class="col-sm-12 col-ls-6 col-xl-4">
+            <img src="img/img6.jpg" alt="foto6"class=" w-100 h-100  p-2 img-fluid ">
+           </div>
+        </div>   
+        <div class="row d-flex">
+           <div class="col-sm-12 col-ls-6 col-xl-4">
+             <img src="img/img7.jpg" alt="foto7" class=" w-100 h-100  p-2 img-fluid ">
+           </div>
+           <div class="col-sm-12 col-ls-6 col-xl-4">
+            <img src="img/img8.jpg" alt="foto8"class=" w-100 h-100  p-2 img-fluid ">
+           </div>
+           <div class="col-sm-12 col-ls-6 col-xl-4">
+            <img src="img/img9.jpg" alt="foto9"class=" w-100 h-100  p-2 img-fluid ">
+           </div>
+        </div>  
+       
+     </div>
+          
+          
+          </div>
+          <div class="tab-pane fade " id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            
+          <!--Fotos pag 2-->
+          <div class="row ">
+           
+            <div class="col-12  d-flex justify-content-center">
+             <!--Post 1--> 
+             <div class="card w-50 " >
+                <div class="card-body d-flex justify-content-between" >
+                    <h5 class="card-title  d-inline pd-4">My crazy dog Spark!</h5>
+                    
+                    <p class="card-subtitle mb-2 text-secondary text-end  d-inline ">08/26</p>
+                </div>
+                <img src="img/img21.jpg" class="w-100 p-0 m-0 img-fluid" alt="paisaje">
+                <div class="card-body">
+                        
+                    <p class="fw-bold">204 likes</p>
+                    <p>This is an examples</p>
+                </div>
+              </div> 
+              </div>
+        </div>
+               <!--Post 2--> 
+         <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+             <div class="card w-50 mt-5" >
+                <div class="card-body d-flex justify-content-between" >
+                    <h5 class="card-title  d-inline pd-4">The beatifull view</h5>
+                    
+                    <h6 class="card-subtitle mb-2 text-secondary text-end d-inline mr-2 ">08/26</h6>
+                </div>
+                <img src="img/img22.jpg" class="w-100 p-0 m-0 img-fluid" alt="paisaje">
+                <div class="card-body">
+                        
+                    <p class="fw-bold">204 likes</p>
+                    <p>This is an examples</p>
+                </div>
+              </div> 
+             </div>
+            </div>
+             <!--Post 3--> 
+             <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+             <div class="card w-50 mt-5" >
+                <div class="card-body d-flex justify-content-between" >
+                    <h5 class="card-title  d-inline pd-4">Football player</h5>
+                    
+                    <h6 class="card-subtitle mb-2 text-secondary text-end d-inline mr-2 ">10/26</h6>
+                </div>
+                <img src="img/img23.jpg" class="w-100 p-0 m-0 img-fluid" alt="jugador">
+                <div class="card-body">
+                      
+                    <p class="fw-bold">10.004 likes</p>
+                    <p>This is an examples</p>
+                </div>
+              </div> 
+
+             </div>
+            </div>
+         </div>   
+
+          </div>
+          
+        </div>
+
+        <!--Fotos Pagina 1-->
+        
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
